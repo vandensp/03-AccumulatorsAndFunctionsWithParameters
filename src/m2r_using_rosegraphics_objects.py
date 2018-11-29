@@ -56,7 +56,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
-#            When you want to keep the last instnace of a window open, otherwise, it will automatically close upon copmletion.
+#            When you want to keep the window open, otherwise, it will automatically close upon completion of the code.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
