@@ -15,9 +15,10 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
-    print_sequence1()
+    #print_sequence1()
     #draw_circles1()
-
+    #print_sequence2()
+    draw_circles2()
 def print_sequence1():
     """
     Prints:
@@ -26,7 +27,7 @@ def print_sequence1():
        200
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # Done: 2. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -84,7 +85,7 @@ def print_sequence2():
       390.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this function, per its doc-string above.
+    # Done: 4. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -93,6 +94,9 @@ def print_sequence2():
     print('Running print_sequence2:')
     print('--------------------------------------------------')
 
+    for k in range(18):
+        total = (50 + (20 * k))
+        print(total)
 
 def draw_circles2():
     """
@@ -114,6 +118,14 @@ def draw_circles2():
     print('Running draw_circles2:  See graphics window')
     print('--------------------------------------------------')
 
+    window = rg.RoseWindow(400, 400)
+    for k in range(17):
+        circle = rg.Circle(rg.Point(50 + (20 * k), 200), 10)
+        circle.fill_color = 'blue'
+        circle.attach_to(window)
+
+    window.render()
+    window.close_on_mouse_click()
 
 def print_sequence3():
     """
