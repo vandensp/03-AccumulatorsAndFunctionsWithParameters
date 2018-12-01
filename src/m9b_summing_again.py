@@ -61,7 +61,7 @@ def sum_powers(n, p):
       -- sum_powers(100, 0.1) returns about 144.45655
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     #   No fair running the code of  sum_powers  to GENERATE
@@ -87,6 +87,24 @@ def run_test_sum_powers_in_range():
     print('--------------------------------------------------')
     print('Testing the   sum_powers_in_range   function:')
     print('--------------------------------------------------')
+
+    # Test 1:
+    expected =
+    actual =
+    print('Test 1 expected:', expected)
+    print('actual', actual)
+
+    # Test 2:
+    expected =
+    actual =
+    print('Test 2 expected:', expected)
+    print('actual', actual)
+
+    # Test 3:
+    expected =
+    actual =
+    print('Test 3 expected:', expected)
+    print('actual', actual)
 
 
 def sum_powers_in_range(m, n, p):
