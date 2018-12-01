@@ -4,8 +4,8 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Samuel VanDenburgh.
+"""  #Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -17,18 +17,36 @@ def main():
 def run_test_sum_powers():
     """ Tests the   sum_powers   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # Done: 2. Implement this function.
     #   It TESTS the  sum_powers  function defined below.
     #   Include at least **   3   ** tests.
     #
     # Use the same 4-step process as in implementing previous
     # TEST functions, including the same way to print expected/actual.
     # -------------------------------------------------------------------------
+
     print()
     print('--------------------------------------------------')
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 3.80826
+    actual = sum_powers(5, -0.3)
+    print('Test 1 expected:', expected)
+    print('actual', actual)
+
+    # Test 2:
+    expected = 144.45655
+    actual = sum_powers(100, 0.1)
+    print('Test 2 expected:', expected)
+    print('actual', actual)
+
+    # Test 3:
+    expected = 20
+    actual = sum_powers(20, 0)
+    print('Test 3 expected:', expected)
+    print('actual', actual)
 
 def sum_powers(n, p):
     """
@@ -49,6 +67,10 @@ def sum_powers(n, p):
     #   No fair running the code of  sum_powers  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
+    total = 0
+    for k in range(n):
+        total = total + ((k + 1) ** p)
+    return total
 
 
 def run_test_sum_powers_in_range():
