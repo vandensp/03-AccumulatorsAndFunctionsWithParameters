@@ -89,20 +89,20 @@ def run_test_sum_powers_in_range():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected =
-    actual =
+    expected = 142.384776
+    actual = sum_powers_in_range(3, 100, 0.1)
     print('Test 1 expected:', expected)
     print('actual', actual)
 
     # Test 2:
-    expected =
-    actual =
+    expected = 3
+    actual = sum_powers_in_range(1, 2, 1)
     print('Test 2 expected:', expected)
     print('actual', actual)
 
     # Test 3:
-    expected =
-    actual =
+    expected = 14
+    actual = sum_powers_in_range(0, 3, 2)
     print('Test 3 expected:', expected)
     print('actual', actual)
 
@@ -120,12 +120,16 @@ def sum_powers_in_range(m, n, p):
       -- sum_powers_in_range(3, 100, 0.1) returns about 142.384776
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     #   No fair running the code of  sum_powers_in_range  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
+    total = 0
+    for k in range(n - m + 1):
+        total = total + ((k + m) ** p)
+    return total
 
 
 # -----------------------------------------------------------------------------
